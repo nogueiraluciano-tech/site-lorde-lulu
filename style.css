@@ -1,0 +1,145 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1f5f9;
+    background: #0f0b1e;
+    line-height: 1.6;
+}
+
+/--------- Menu topo ---------/
+
+.topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    background: #090514;
+    padding: 1rem 1.5rem;
+}
+
+.logo{
+    color: #ff007f;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.menu{display: flex; gap: 1rem;}
+.menu a{
+    color: #a5b4fc;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+}
+
+.menu a:hover{background: #1e1538;}
+.menu a.ativo{
+    background: linear-gradient(90deg, #6366f1, #d946ef);
+}
+
+/------- Conteúdo --------------/
+
+main{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.2rem; 
+}
+
+.hero{
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(160deg, #2e1065, #0284c7);
+    color: #fff;
+    border-radius: 16px;
+}
+.hero h1{
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+}
+.hero p {
+    max-width: 520px;
+    margin: 0 auto 1.2rem;
+    opacity: 0.95;
+}
+
+.botao{
+    display: inline-block;
+    background: #ff007f;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.botao:hover{transform: scale(1.05);}
+
+/* cards */
+
+.cards{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.card{
+    flex: 1 1 220px;
+    background: #150f2e;
+    border: 1px solid #2e215c;
+    border-radius: 14px;
+    padding: 1.3rem;
+    box-shadow: 0 6px 18px rgb(0, 0, 0, 0.4);
+}
+
+.card h2 {margin-bottom: 0.4rem; font-family: 1.1rem;}
+
+.conteudo{
+    background: #150f2e;
+    border: 1px solid #2e215c;
+    border-radius: 14px;
+    padding: 1.6rem;
+}
+.conteudo h1 {margin-bottom: 0.6rem;}
+.conteudo h2 {margin: 1rem 0 0.4rem;}
+.conteudo ul{margin-left: 1.2rem;}
+
+/* Formulario */
+.form{margin-top: 1rem;}
+.campo{margin-bottom: 1rem;}
+.campo label{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+.campo input, .campo textarea{
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    background: #090514;
+    border: 1px solid #2e215c;
+    color: #fff;
+}
+.campo input:focus, .campo textarea:focus{
+    outline: 3px solid rgba(217, 70, 239, 0.4);
+    border-color: #d946ef;
+}
+
+.rodape{
+    text-align: center;
+    padding: 1.5rem;
+    color: #6366f1;
+    font-size: 0.85rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 600) {
+    .hero h1 {font-size: 1.5rem;}
+    .menu{width: 100%; justify-content: center;}
+}
